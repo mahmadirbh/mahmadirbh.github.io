@@ -28,19 +28,47 @@
 <!--  value="linda.york@rogersbh.org">                                        -->
 <!--  ----------------------------------------------------------------------  -->
 
-<input type=hidden name="recordType" id="recordType" value="0124U000000bdJpQAI">
+<input type=hidden name="recordType" id="recordType" value="0124U000000gAT8QAM">
 
 <input type=hidden name="Status" id="Status" value="New">
 
+Licensed provider (therapist/psych/pcp):<select  id="00N4U000008ppDJ" name="00N4U000008ppDJ" title="Licensed provider (therapist/psych/pcp)" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" required="true"/><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required="true"/><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text"/><br>
+
 Name:<input  id="00N4U000008MSjN" maxlength="40" name="00N4U000008MSjN" size="20" type="text" required="true"/><br>
 
-Parent or Guardian Name:<input  id="00N4U000008MZLN" maxlength="40" name="00N4U000008MZLN" size="20" type="text" required="true"/><br>
+Date of Birth:<span class="dateInput dateOnlyInput"><input  id="00N4U000008MSjF" name="00N4U000008MSjF" size="12" type="text" required="true"/></span><br>
+
+Gender:<select  id="00N4U000005qUla" multiple="multiple" name="00N4U000005qUla" title="Gender" required="true"><option value="Gender Fluid">Gender Fluid</option>
+<option value="Man/Boy">Man/Boy</option>
+<option value="Non-Binary">Non-Binary</option>
+<option value="Trans-Man">Trans-Man</option>
+<option value="Trans-Woman">Trans-Woman</option>
+<option value="Woman/Girl">Woman/Girl</option>
+<option value="Other">Other</option>
+<option value="Need to confirm">Need to confirm</option>
+<option value="Prefers Not to Disclose">Prefers Not to Disclose</option>
+<option value="Trans-NonBinary">Trans-NonBinary</option>
+</select><br>
 
 Phone:<input  id="00N4U000008MSjP" maxlength="40" name="00N4U000008MSjP" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" required="true"/><br>
 
-Patient E-mail:<input  id="00N4U000008MZLO" maxlength="80" name="00N4U000008MZLO" size="20" type="text" required="true"/><br>
+Ok to leave voicemail:<select  id="00N4U000005qUly" name="00N4U000005qUly" title="Ok to leave voicemail" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
 
-Primary Language:<select  id="00N4U000005qUnQ" name="00N4U000005qUnQ" title="Primary Language"><option value="">--None--</option><option value="Abkhaz">Abkhaz</option>
+Patient E-mail:<input  id="00N4U000008MZLO" maxlength="80" name="00N4U000008MZLO" size="20" type="text" /><br>
+
+Relationship with patient:<input  id="00N4U000008MZLS" maxlength="80" name="00N4U000008MZLS" size="20" type="text" /><br>
+
+Primary Language:<select  id="00N4U000005qUnQ" name="00N4U000005qUnQ" title="Primary Language" required="true"/><option value="">--None--</option><option value="Abkhaz">Abkhaz</option>
 <option value="Adyghe">Adyghe</option>
 <option value="Afrikaans">Afrikaans</option>
 <option value="Akan">Akan</option>
@@ -174,23 +202,9 @@ Primary Language:<select  id="00N4U000005qUnQ" name="00N4U000005qUnQ" title="Pri
 <option value="Zazaki">Zazaki</option>
 </select><br>
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" required="true"/><br>
+Address:<input  id="00N4U000008MSjB" maxlength="100" name="00N4U000008MSjB" size="20" type="text" required="true"/><br>
 
-Recommending Patient for which program:<select  id="00N4U000005qUm3" name="00N4U000005qUm3" title="Recommending Patient for which program" required="true"/><option value="">--None--</option><option value="Addiction">Addiction</option>
-<option value="Depression and mood disorders">Depression and mood disorders</option>
-<option value="Eating disorder">Eating disorder</option>
-<option value="OCD and anxiety disorders">OCD and anxiety disorders</option>
-<option value="Posttraumatic stress disorder">Posttraumatic stress disorder</option>
-</select><br>
-
-Location:<select  id="00N4U000008MSjM" name="00N4U000008MSjM" title="Location" required="true"/><option value="">--None--</option><option value="Oconomowoc">Oconomowoc</option>
-<option value="West Allis">West Allis</option>
-<option value="BrownDeer">BrownDeer</option>
-</select><br>
-
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required="true"/><br>
-
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/><br>
+City:<input  id="00N4U000008pqML" maxlength="40" name="00N4U000008pqML" size="20" type="text" required="true"/><br>
 
 State:<select  id="00N4U000008pqMM" name="00N4U000008pqMM" title="State" required="true"/><option value="">--None--</option><option value="Alabama">Alabama</option>
 <option value="Alaska">Alaska</option>
@@ -245,13 +259,218 @@ State:<select  id="00N4U000008pqMM" name="00N4U000008pqMM" title="State" require
 <option value="Wyoming">Wyoming</option>
 </select><br>
 
-Relationship with patient:<input  id="00N4U000008MZLS" maxlength="80" name="00N4U000008MZLS" size="20" type="text" /><br>
+Postal Code:<input  id="00N4U000008pqMp" maxlength="5" name="00N4U000008pqMp" size="20" type="text" required="true"/><br>
 
-Acknowledge Rogers will reach out:<input  id="00N4U000008MZLL" name="00N4U000008MZLL" type="checkbox" value="1" required="true"/><br>
+Country:<input  id="00N4U000008pqMk" maxlength="40" name="00N4U000008pqMk" size="20" type="text" required="true"/><br>
 
-<label for="description">Description</label><textarea name="description"></textarea><br>
+Insurance provider:<input  id="00N4U000005qUlx" maxlength="40" name="00N4U000005qUlx" size="20" type="text" required="true"/><br>
+
+Insurance policy holder:<input  id="00N4U000005qUlw" maxlength="40" name="00N4U000005qUlw" size="20" type="text" required="true"/><br>
+
+Insurance policy ID:<input  id="00N4U000005qUlv" maxlength="25" name="00N4U000005qUlv" size="20" type="text" required="true"/><br>
+
+Insurance phone number:<input  id="00N4U000005qUlu" maxlength="40" name="00N4U000005qUlu" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" required="true"/><br>
+
+Parent or Guardian Name:<input  id="00N4U000008MZLN" maxlength="40" name="00N4U000008MZLN" size="20" type="text" /><br>
+
+Parent or Guardian Phone:<input  id="00N4U000005qUm1" maxlength="40" name="00N4U000005qUm1" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+
+Ok to leave voicemail w parent/guardian:<select  id="00N4U000005qUlz" name="00N4U000005qUlz" title="Ok to leave voicemail w parent/guardian"><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Parent will attend w/child 10 or under:<select  id="00N4U000005qUm2" name="00N4U000005qUm2" title="Parent will attend w/child 10 or under"><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Able to attend daily treatment:<select  id="00N4U000005qUlU" name="00N4U000005qUlU" title="Able to attend daily treatment" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Pt is currently in ER or IP/Res facility:<select  id="00N4U000008ppDK" name="00N4U000008ppDK" title="Pt is currently in ER or IP/Res facility" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Location:<select  id="00N4U000008MSjM" name="00N4U000008MSjM" title="Location" required="true"/><option value="">--None--</option><option value="Oconomowoc">Oconomowoc</option>
+<option value="West Allis">West Allis</option>
+<option value="BrownDeer">BrownDeer</option>
+<option value="Kenosha">Kenosha</option>
+<option value="Madison">Madison</option>
+<option value="Tampa">Tampa</option>
+<option value="Skokie">Skokie</option>
+<option value="Appleton">Appleton</option>
+<option value="Nashville">Nashville</option>
+<option value="Minneapolis">Minneapolis</option>
+<option value="Philadelphia">Philadelphia</option>
+<option value="San Francisco East Bay">San Francisco East Bay</option>
+<option value="Hinsdale">Hinsdale</option>
+<option value="Miami">Miami</option>
+<option value="St. Paul">St. Paul</option>
+<option value="San Diego">San Diego</option>
+<option value="Sheboygan">Sheboygan</option>
+<option value="Los Angeles">Los Angeles</option>
+<option value="Atlanta">Atlanta</option>
+<option value="Seattle">Seattle</option>
+<option value="Denver">Denver</option>
+</select><br>
+
+Recommending Patient for which program:<select  id="00N4U000005qUm3" name="00N4U000005qUm3" title="Recommending Patient for which program" required="true"/><option value="">--None--</option><option value="Addiction">Addiction</option>
+<option value="Depression and mood disorders">Depression and mood disorders</option>
+<option value="Eating disorder">Eating disorder</option>
+<option value="OCD and anxiety disorders">OCD and anxiety disorders</option>
+<option value="Posttraumatic stress disorder">Posttraumatic stress disorder</option>
+<option value="Depression">Depression</option>
+<option value="Mental Health and Addiction">Mental Health and Addiction</option>
+<option value="Trauma">Trauma</option>
+<option value="Anxiety and Depression in ASD">Anxiety and Depression in ASD</option>
+<option value="DBT and Mental Health Recovery">DBT and Mental Health Recovery</option>
+<option value="Other (please specify)">Other (please specify)</option>
+</select><br>
+
+If program rec is other, please specify:<textarea  id="00N4U000008ppDI" name="00N4U000008ppDI" type="text" wrap="soft"></textarea><br>
+
+Psychiatric Diagnoses:<textarea  id="00N4U000005qUm5" name="00N4U000005qUm5" type="text" wrap="soft" required="true"/></textarea><br>
+
+Problems interfere w ability to function:<select  id="00N4U000005qUm4" name="00N4U000005qUm4" title="Problems interfere w ability to function" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has current mania delusions or psychosis:<select  id="00N4U000005qUle" name="00N4U000005qUle" title="Has current mania delusions or psychosis" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+In psychiatric hosp/detox last 30 days:<select  id="00N4U000005qUls" name="00N4U000005qUls" title="In psychiatric hosp/detox last 30 days" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+If in psychiatric hosp/detox need info:<textarea  id="00N4U000005qUln" name="00N4U000005qUln" type="text" wrap="soft"></textarea><br>
+
+Has intellectual deficit or IQ below 85:<select  id="00N4U000005qUlg" name="00N4U000005qUlg" title="Has intellectual deficit or IQ below 85" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has significant medical concerns:<select  id="00N4U000005qUlj" name="00N4U000005qUlj" title="Has significant medical concerns" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+In med/surgical hospital last 30 days:<select  id="00N4U000005qUlr" name="00N4U000005qUlr" title="In med/surgical hospital last 30 days" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Had physical altercation outside home:<select  id="00N4U000005qUlb" name="00N4U000005qUlb" title="Had physical altercation outside home" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has impending legal concerns:<select  id="00N4U000005qUlf" name="00N4U000005qUlf" title="Has impending legal concerns" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has suicidal thoughts:<select  id="00N4U000005qUlk" name="00N4U000005qUlk" title="Has suicidal thoughts" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has active suicide plan and intent:<select  id="00N4U000005qUlc" name="00N4U000005qUlc" title="Has active suicide plan and intent" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Engaging in self-injurious behavior:<select  id="00N4U000005qUlX" name="00N4U000005qUlX" title="Engaging in self-injurious behavior" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Injuries required medical attention:<select  id="00N4U000005qUlt" name="00N4U000005qUlt" title="Injuries required medical attention" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has thoughts of harming others:<select  id="00N4U000005qUll" name="00N4U000005qUll" title="Has thoughts of harming others" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has plan and intent to harm others:<select  id="00N4U000005qUlh" name="00N4U000005qUlh" title="Has plan and intent to harm others" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Accused sex assault inappropriate behavr:<select  id="00N4U000005qUlV" name="00N4U000005qUlV" title="Accused sex assault inappropriate behavr" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Active or history of eating disorder:<select  id="00N4U000005qUlW" name="00N4U000005qUlW" title="Active or history of eating disorder" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Currently binging purging or restricting:<select  id="00N4U000005qUlY" name="00N4U000005qUlY" title="Currently binging purging or restricting" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has recent significant change in weight:<select  id="00N4U000005qUli" name="00N4U000005qUli" title="Has recent significant change in weight" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Has concern w/substance use incl Rx med:<select  id="00N4U000005qUld" name="00N4U000005qUld" title="Has concern w/substance use incl Rx med" required="true"/><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+If yes select all substances:<select  id="00N4U000005qUlq" multiple="multiple" name="00N4U000005qUlq" title="If yes select all substances"><option value="Alcohol">Alcohol</option>
+<option value="Cannabis">Cannabis</option>
+<option value="Cocaine">Cocaine</option>
+<option value="Dextromethorphan">Dextromethorphan</option>
+<option value="Hallucinogens">Hallucinogens</option>
+<option value="Hypnotics">Hypnotics</option>
+<option value="Inhalants">Inhalants</option>
+<option value="Opiates">Opiates</option>
+<option value="Sedatives">Sedatives</option>
+<option value="Stimulants">Stimulants</option>
+<option value="Other">Other</option>
+</select><br>
+
+If other substance, please describe:<input  id="00N4U000005qUlp" maxlength="80" name="00N4U000005qUlp" size="20" type="text" /><br>
+
+Route Frequency Amount Date:<textarea  id="00N4U000005qUm7" name="00N4U000005qUm7" type="text" wrap="soft"></textarea><br>
+
+Experiencing withdrawal symptoms:<select  id="00N4U000005qUlZ" multiple="multiple" name="00N4U000005qUlZ" title="Experiencing withdrawal symptoms"><option value="None">None</option>
+<option value="Anxiety">Anxiety</option>
+<option value="Diarrhea">Diarrhea</option>
+<option value="Hallucinations">Hallucinations</option>
+<option value="Heart palpitations">Heart palpitations</option>
+<option value="Joint pain">Joint pain</option>
+<option value="Muscle twitches">Muscle twitches</option>
+<option value="Not able to sleep">Not able to sleep</option>
+<option value="Rapid heartbeat">Rapid heartbeat</option>
+<option value="Seizures">Seizures</option>
+<option value="Too much sleep">Too much sleep</option>
+<option value="Vomiting">Vomiting</option>
+<option value="Abdominal cramps">Abdominal cramps</option>
+<option value="Confusion">Confusion</option>
+<option value="Goose bumps">Goose bumps</option>
+<option value="Headache">Headache</option>
+<option value="Irritability">Irritability</option>
+<option value="Mood swings">Mood swings</option>
+<option value="Nausea">Nausea</option>
+<option value="Paranoia">Paranoia</option>
+<option value="Restlessness">Restlessness</option>
+<option value="Sweating">Sweating</option>
+<option value="Tremors">Tremors</option>
+<option value="Other">Other</option>
+</select><br>
+
+History of withdrawal seizures paranoia:<select  id="00N4U000005qUlm" name="00N4U000005qUlm" title="History of withdrawal seizures paranoia"><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Receiving medication assisted treatment:<select  id="00N4U000005qUm6" multiple="multiple" name="00N4U000005qUm6" title="Receiving medication assisted treatment"><option value="Antabuse">Antabuse</option>
+<option value="Buprenorphine">Buprenorphine</option>
+<option value="Campral">Campral</option>
+<option value="Methadone">Methadone</option>
+<option value="Naltrexone">Naltrexone</option>
+<option value="Suboxone">Suboxone</option>
+<option value="Vivitrol">Vivitrol</option>
+<option value="If other, please describe">If other, please describe</option>
+</select><br>
+
+If other MAT please describe.:<textarea  id="00N4U000005qUlo" name="00N4U000005qUlo" type="text" wrap="soft"></textarea><br>
 
 Attachments available:<input  id="00N4U000008pqKU" name="00N4U000008pqKU" type="checkbox" value="1" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
 
 
 <input type="submit" name="submit">
