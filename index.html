@@ -10,10 +10,12 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://rogersbh--uat.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D7e00000EeqMY" method="POST">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name="orgid" value="00D7e00000EeqMY">
+<input type=hidden name="orgid" value="00DU0000000LgNj">
 <input type=hidden name="retURL" value="http://rogersbh.org/referral-partners/referral-form/your-screening-request-has-been-submitted?form_success=1&entry=135997#form51137">
+  <input type=hidden name="recordType" id="recordType" value=" 0124U000000NTO8QAO">
+
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -22,10 +24,14 @@
 <!--  <input type="hidden" name="debugEmail"                                  -->
 <!--  value="mehdi.ahmadi@rogersbh.org">                                      -->
 <!--  ----------------------------------------------------------------------  -->
-<p> The WISE Coalition produces a newsletter with upcoming events, programs, and partner updates as well as research highlights for best practices in the mental health field.p><br>
+
+Name:<input  id="00N4U000008MSjN" maxlength="40" name="00N4U000008MSjN" size="20" type="text" /><br>
+
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<input type=hidden name="recordType" id="recordType" value="0127e000002KSii">
+<label for="company">Company</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
 
 <input type="submit" name="submit">
 
